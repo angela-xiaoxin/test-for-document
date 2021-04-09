@@ -1,0 +1,145 @@
+# 导航<a name="ZH-CN_TOPIC_0000001099341056"></a>
+
+提供驾车导航功能。
+
+-   Deeplink样例：
+
+    ```
+    mapapp://navigation?saddr=25.102916,55.165363&daddr=25.164610000000,55.228869000000&language=en&type=drive
+    mapapp://navigation?saddr=home&daddr=company&language=en&type=drive
+    mapapp://navigation?type=exit
+    petalmaps:navigation?type=exit
+    ```
+
+
+-   Applink样例
+
+    ```
+    https://www.petalmaps.com/navigate/?saddr=25.102916,55.165363&daddr=25.164610000000,55.228869000000&type=drive&utm_source=fb
+    ```
+
+-   参数列表：
+
+    <a name="table1090724503720"></a>
+    <table><thead align="left"><tr id="row1490734519378"><th class="cellrowborder" valign="top" width="20%" id="mcps1.1.5.1.1"><p id="p2090744523719"><a name="p2090744523719"></a><a name="p2090744523719"></a>参数</p>
+    </th>
+    <th class="cellrowborder" valign="top" width="15%" id="mcps1.1.5.1.2"><p id="p15907144593713"><a name="p15907144593713"></a><a name="p15907144593713"></a>是否必选</p>
+    </th>
+    <th class="cellrowborder" valign="top" width="15%" id="mcps1.1.5.1.3"><p id="p18907164553714"><a name="p18907164553714"></a><a name="p18907164553714"></a>参数类型</p>
+    </th>
+    <th class="cellrowborder" valign="top" width="50%" id="mcps1.1.5.1.4"><p id="p14907114553715"><a name="p14907114553715"></a><a name="p14907114553715"></a>描述</p>
+    </th>
+    </tr>
+    </thead>
+    <tbody><tr id="row139081145183718"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.1.5.1.1 "><p id="p125mcpsimp"><a name="p125mcpsimp"></a><a name="p125mcpsimp"></a>saddr</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="15%" headers="mcps1.1.5.1.2 "><p id="p1134241864114"><a name="p1134241864114"></a><a name="p1134241864114"></a>否</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="15%" headers="mcps1.1.5.1.3 "><p id="p127mcpsimp"><a name="p127mcpsimp"></a><a name="p127mcpsimp"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="50%" headers="mcps1.1.5.1.4 "><p id="p17293175516553"><a name="p17293175516553"></a><a name="p17293175516553"></a>导航的起点。支持设置为经纬度、花瓣地图的家庭地址“home”或公司地址“company”。如果不设置，默认取当前位置。</p>
+    </td>
+    </tr>
+    <tr id="row152521016155515"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.1.5.1.1 "><p id="p1253121610559"><a name="p1253121610559"></a><a name="p1253121610559"></a>daddr</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="15%" headers="mcps1.1.5.1.2 "><p id="p1925321615553"><a name="p1925321615553"></a><a name="p1925321615553"></a>是</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="15%" headers="mcps1.1.5.1.3 "><p id="p1253111618557"><a name="p1253111618557"></a><a name="p1253111618557"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="50%" headers="mcps1.1.5.1.4 "><p id="p23338189307"><a name="p23338189307"></a><a name="p23338189307"></a>导航的终点。支持设置为经纬度、花瓣地图的家庭地址“home”或公司地址“company”。</p>
+    </td>
+    </tr>
+    <tr id="row2836418105512"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.1.5.1.1 "><p id="p1583731875514"><a name="p1583731875514"></a><a name="p1583731875514"></a>type</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="15%" headers="mcps1.1.5.1.2 "><p id="p158376184552"><a name="p158376184552"></a><a name="p158376184552"></a>否</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="15%" headers="mcps1.1.5.1.3 "><p id="p1183716180558"><a name="p1183716180558"></a><a name="p1183716180558"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="50%" headers="mcps1.1.5.1.4 "><a name="ul7923161119451"></a><a name="ul7923161119451"></a><ul id="ul7923161119451"><li>drive：驾车路径规划。</li><li>exit：退出导航。</li></ul>
+    <p id="p6333141843018"><a name="p6333141843018"></a><a name="p6333141843018"></a>默认为drive。</p>
+    </td>
+    </tr>
+    <tr id="row990101825818"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.1.5.1.1 "><p id="p991018205810"><a name="p991018205810"></a><a name="p991018205810"></a>language</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="15%" headers="mcps1.1.5.1.2 "><p id="p09121818588"><a name="p09121818588"></a><a name="p09121818588"></a>否</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="15%" headers="mcps1.1.5.1.3 "><p id="p129120182587"><a name="p129120182587"></a><a name="p129120182587"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="50%" headers="mcps1.1.5.1.4 "><a name="ul732263110460"></a><a name="ul732263110460"></a><ul id="ul732263110460"><li>zh_CN：中文。</li><li>en：英文。</li></ul>
+    <p id="p1133491815304"><a name="p1133491815304"></a><a name="p1133491815304"></a>默认使用地图App的导航语言。</p>
+    </td>
+    </tr>
+    <tr id="row1376010542261"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.1.5.1.1 "><p id="p5416152215172"><a name="p5416152215172"></a><a name="p5416152215172"></a>utm_source</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="15%" headers="mcps1.1.5.1.2 "><p id="p11416112217171"><a name="p11416112217171"></a><a name="p11416112217171"></a>否</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="15%" headers="mcps1.1.5.1.3 "><p id="p174161322131710"><a name="p174161322131710"></a><a name="p174161322131710"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="50%" headers="mcps1.1.5.1.4 "><p id="p1884707181818"><a name="p1884707181818"></a><a name="p1884707181818"></a>渠道来源（应用可以传入App包名或者应用名）。</p>
+    </td>
+    </tr>
+    <tr id="row674113578268"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.1.5.1.1 "><p id="p1079613193187"><a name="p1079613193187"></a><a name="p1079613193187"></a>utm_medium</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="15%" headers="mcps1.1.5.1.2 "><p id="p295410466206"><a name="p295410466206"></a><a name="p295410466206"></a>否</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="15%" headers="mcps1.1.5.1.3 "><p id="p87968195185"><a name="p87968195185"></a><a name="p87968195185"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="50%" headers="mcps1.1.5.1.4 "><p id="p179641917180"><a name="p179641917180"></a><a name="p179641917180"></a>媒介。</p>
+    </td>
+    </tr>
+    <tr id="row69410022717"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.1.5.1.1 "><p id="p3790421101819"><a name="p3790421101819"></a><a name="p3790421101819"></a>utm_campaign</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="15%" headers="mcps1.1.5.1.2 "><p id="p199621547172016"><a name="p199621547172016"></a><a name="p199621547172016"></a>否</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="15%" headers="mcps1.1.5.1.3 "><p id="p12791021131813"><a name="p12791021131813"></a><a name="p12791021131813"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="50%" headers="mcps1.1.5.1.4 "><p id="p197917216189"><a name="p197917216189"></a><a name="p197917216189"></a>运营活动名称。</p>
+    </td>
+    </tr>
+    <tr id="row111090819271"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.1.5.1.1 "><p id="p12143122415186"><a name="p12143122415186"></a><a name="p12143122415186"></a>utm_term</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="15%" headers="mcps1.1.5.1.2 "><p id="p162581249122012"><a name="p162581249122012"></a><a name="p162581249122012"></a>否</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="15%" headers="mcps1.1.5.1.3 "><p id="p171439243189"><a name="p171439243189"></a><a name="p171439243189"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="50%" headers="mcps1.1.5.1.4 "><p id="p214362491810"><a name="p214362491810"></a><a name="p214362491810"></a>运营活动关键词。</p>
+    </td>
+    </tr>
+    <tr id="row127010419275"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.1.5.1.1 "><p id="p923533412020"><a name="p923533412020"></a><a name="p923533412020"></a>utm_content</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="15%" headers="mcps1.1.5.1.2 "><p id="p20306050102018"><a name="p20306050102018"></a><a name="p20306050102018"></a>否</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="15%" headers="mcps1.1.5.1.3 "><p id="p13235123419206"><a name="p13235123419206"></a><a name="p13235123419206"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="50%" headers="mcps1.1.5.1.4 "><p id="p16235143419201"><a name="p16235143419201"></a><a name="p16235143419201"></a>运营活动内容。</p>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+
+
+-   代码样例
+
+    Intent方式：
+
+    ```
+    Uri content_url = Uri.parse(petalmaps: //navigation?saddr=25.102916,55.165363&daddr=25.164610000000,55.228869000000&type=drive &utm_source=fb);
+    String uriString = "mapapp://navigation?saddr=25.102916,55.165363&daddr=25.164610000000,55.228869000000&language=en&type=drive"; 
+    Uri content_url = Uri.parse(uriString);
+    Intent intent = new Intent(Intent.ACTION_VIEW, content_url); 
+    if (intent.resolveActivity(getPackageManager()) != null) {
+         startActivity(intent); 
+    }
+    ```
+
+    直接点击链接方式：
+
+    ```
+    https://www.petalmaps.com/ navigate/?saddr=25.102916,55.165363&daddr=25.164610000000,55.228869000000&type=drive&utm_source=fb
+    ```
+
+    运行后的效果如下图所示：
+
+    ![](figures/zh-cn_image_0000001099501104.jpg)
+
+

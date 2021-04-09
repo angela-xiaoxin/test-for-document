@@ -1,0 +1,4 @@
+# 概览<a name="ZH-CN_TOPIC_0000001099501042"></a>
+
+本章节将向您介绍如何在地图上绘制标记、覆盖物以及形状等，参见[示例代码](zh-cn_topic_0000001050162104.md)工程中的[MarkerDemoActivity.java](https://github.com/HMS-Core/hms-mapkit-demo-java/blob/master/java/app/src/main/java/com/huawei/hms/maps/sample/MarkerDemoActivity.java)、[GroundOverlayDemoActivity.java](https://github.com/HMS-Core/hms-mapkit-demo-java/blob/master/java/app/src/main/java/com/huawei/hms/maps/sample/GroundOverlayDemoActivity.java)、[PolylineDemoActivity.java](https://github.com/HMS-Core/hms-mapkit-demo-java/blob/master/java/app/src/main/java/com/huawei/hms/maps/sample/PolylineDemoActivity.java)、[PolygonDemoActivity.java](https://github.com/HMS-Core/hms-mapkit-demo-java/blob/master/java/app/src/main/java/com/huawei/hms/maps/sample/PolygonDemoActivity.java)、[CircleDemoActivity.java](https://github.com/HMS-Core/hms-mapkit-demo-java/blob/master/java/app/src/main/java/com/huawei/hms/maps/sample/CircleDemoActivity.java)等文件。
+
